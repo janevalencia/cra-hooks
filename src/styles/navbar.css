@@ -1,0 +1,58 @@
+.nav {
+    min-width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-right: 1px grey solid;
+}
+
+.hamburger__mobile button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav__title a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.nav__menus {
+    flex-grow: 1;
+    margin-top: 1rem;
+}
+
+.nav__menus ul {
+    list-style: none;
+}
+
+.nav__menus li {
+    margin-bottom: 1rem;
+}
+
+.nav__menus a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav__menus a.active {
+    color: blue;
+    text-decoration: underline;
+}
+
+.nav__menus a:hover {
+    color: blue;
+}
+
+.nav_socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.nav_socials a {
+    cursor: pointer;
+}
