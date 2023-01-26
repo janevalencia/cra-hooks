@@ -31,7 +31,12 @@ function UseState() {
                 <div>
                     <h2>What?</h2>
                     <p>Returns a stateful value and a function to update it.</p>
-                    <p>const [state, setState] = useState(initialState);</p>
+                    <br />
+                    <pre>
+                        <code>
+                            const [state, setState] = useState(initialState);
+                        </code>
+                    </pre>
                 </div>
                 <div>
                     <h2>How?</h2>
