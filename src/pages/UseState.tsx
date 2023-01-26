@@ -38,6 +38,7 @@ function UseState() {
                         </code>
                     </pre>
                 </div>
+                <br />
                 <div>
                     <h2>How?</h2>
                     <div>
@@ -48,6 +49,7 @@ function UseState() {
                         </button>
                     </div>
                 </div>
+                <br />
                 <div>
                     <h2>Code Snippet: </h2>
                     <a

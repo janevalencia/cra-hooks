@@ -4,6 +4,7 @@ import "./index.css";
 import { Layout } from "./components";
 import App from "./App";
 import UseState from "./pages/UseState";
+import UseReducer from "./pages/UseReducer";
 import NotFound from "./pages/404";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     {
         path: "/use-state",
         element: <UseState />
+    },
+    {
+        path: "/use-reducer",
+        element: <UseReducer />
     }
 ]);
 
