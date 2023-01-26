@@ -6,19 +6,19 @@ function UseState() {
     const [disabled, setDisabled] = useState<boolean>(true);
 
     const increment = () => {
-        setCounter(counter + 1);
+        setCounter((prev) => prev + 1);
         setDisabled(false);
         setMessage("");
     };
 
     const decrement = () => {
         if (counter >= 1) {
-            setCounter(counter - 1);
+            setCounter((prev) => prev - 1);
         }
 
         if (counter === 0) {
             setDisabled(true);
-            setMessage("Counter cannot go below 0.")
+            setMessage("Counter cannot go below 0.");
         }
     };
 
@@ -42,6 +42,16 @@ function UseState() {
                             Decrement
                         </button>
                     </div>
+                </div>
+                <div>
+                    <h2>Code Snippet: </h2>
+                    <a
+                        href="https://github.com/janevalencia/cra-hooks/blob/staging/src/pages/UseState.tsx#L3-L49"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Check on github.
+                    </a>
                 </div>
             </article>
         </section>
