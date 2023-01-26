@@ -44,3 +44,8 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 1rem;
   border-radius: 10px;
 }
+
+.page_content .red-alert {
+  color: red;
+  font-size: 0.8rem;
+}
