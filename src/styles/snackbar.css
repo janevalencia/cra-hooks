@@ -1,0 +1,6 @@
+.snack-container {
+    max-width: 30%;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 1rem;
+}

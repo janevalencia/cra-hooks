@@ -65,7 +65,7 @@ function UseImperativeHandle() {
                 <br />
                 <div>
                     <h2>Code Snippet: </h2>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/janevalencia/cra-hooks/blob/staging/src/pages/UseImperativeHandle.tsx" target="_blank" rel="noopener noreferrer">
                         Check on github.
                     </a>
                 </div>
