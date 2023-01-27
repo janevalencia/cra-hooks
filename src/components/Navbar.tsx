@@ -72,7 +72,7 @@ function Navbar({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            🚀 Github Repo
+                            <AiFillGithub size={16} /> Github Repo
                         </a>
                     </li>
                 </ul>
