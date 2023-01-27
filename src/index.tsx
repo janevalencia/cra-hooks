@@ -9,6 +9,7 @@ import NotFound from "./pages/404";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UseImperativeHandle from "./pages/UseImperativeHandle";
 import UseMemo from "./pages/UseMemo";
+import UseCallback from "./pages/UseCallback";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     {
         path: "/use-memo",
         element: <UseMemo />
+    },
+    {
+        path: "/use-callback",
+        element: <UseCallback />
     },
     {
         path: "/use-imperativeHandle",
