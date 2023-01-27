@@ -7,6 +7,8 @@ import UseState from "./pages/UseState";
 import UseReducer from "./pages/UseReducer";
 import NotFound from "./pages/404";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import UseImperativeHandle from "./pages/UseImperativeHandle";
+import UseMemo from "./pages/UseMemo";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
     {
         path: "/use-reducer",
         element: <UseReducer />
+    },
+    {
+        path: "/use-memo",
+        element: <UseMemo />
+    },
+    {
+        path: "/use-imperativeHandle",
+        element: <UseImperativeHandle />
     }
 ]);
 
