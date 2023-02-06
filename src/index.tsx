@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UseImperativeHandle from "./pages/UseImperativeHandle";
 import UseMemo from "./pages/UseMemo";
 import UseCallback from "./pages/UseCallback";
+import UseEffect from "./pages/UseEffect";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path: "/use-reducer",
         element: <UseReducer />
+    },
+    {
+        path: "/use-effect",
+        element: <UseEffect />
     },
     {
         path: "/use-memo",
