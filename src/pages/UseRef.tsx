@@ -37,7 +37,7 @@ const UseRef = () => {
                 <div>
                     <h2>Code Snippet: </h2>
                     <a
-                        href="/"
+                        href="https://github.com/janevalencia/cra-hooks/blob/staging/src/pages/UseRef.tsx"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
