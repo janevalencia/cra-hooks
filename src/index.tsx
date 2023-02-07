@@ -12,6 +12,8 @@ import UseMemo from "./pages/UseMemo";
 import UseCallback from "./pages/UseCallback";
 import UseEffect from "./pages/UseEffect";
 import UseRef from "./pages/UseRef";
+import UseLayoutEffect from "./pages/UseLayoutEffect";
+import UseContext from "./pages/UseContext";
 
 const router = createBrowserRouter([
     {
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
         element: <UseEffect />
     },
     {
+        path: "/use-layoutEffect",
+        element: <UseLayoutEffect />
+    },
+    {
         path: "/use-memo",
         element: <UseMemo />
     },
@@ -46,6 +52,10 @@ const router = createBrowserRouter([
     {
         path: "/use-imperativeHandle",
         element: <UseImperativeHandle />
+    },
+    {
+        path: "/use-context",
+        element: <UseContext />
     }
 ]);
 
