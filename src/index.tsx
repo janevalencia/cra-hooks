@@ -11,6 +11,7 @@ import UseImperativeHandle from "./pages/UseImperativeHandle";
 import UseMemo from "./pages/UseMemo";
 import UseCallback from "./pages/UseCallback";
 import UseEffect from "./pages/UseEffect";
+import UseRef from "./pages/UseRef";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     {
         path: "/use-reducer",
         element: <UseReducer />
+    },
+    {
+        path: "/use-ref",
+        element: <UseRef />
     },
     {
         path: "/use-effect",
