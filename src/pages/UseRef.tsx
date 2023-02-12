@@ -8,6 +8,8 @@ const UseRef = () => {
         alert(`You have clicked the button for ${btnRef.current.toString()} times.`);
     }
 
+    document.title = "React Hooks | useRef";
+
     return (
         <section className="page">
             <h1>useRef</h1>

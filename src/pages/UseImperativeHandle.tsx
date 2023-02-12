@@ -20,6 +20,8 @@ function UseImperativeHandle() {
         }
     }
 
+    document.title = "React Hooks | useImperativeHandle";
+
     return (
         <section className="page">
             <h1>useImperativeHandle</h1>

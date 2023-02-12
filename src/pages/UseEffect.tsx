@@ -13,6 +13,8 @@ const UseEffect = () => {
         setValue(e.target.value);  
     }
 
+    document.title = "React Hooks | useEffect";
+
     return (
         <section className="page">
             <h1>useEffect</h1>

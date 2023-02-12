@@ -2,6 +2,7 @@ import React from "react";
 import { MemoizedCallback, UnMemoizedCallback } from "../components/index";
 
 function UseCallback() {
+  document.title = "React Hooks | useCallback";
   return (
     <section className="page">
       <h1>useCallback</h1>
