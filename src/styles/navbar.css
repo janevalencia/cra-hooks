@@ -1,5 +1,5 @@
 .nav {
-    max-width: 20vw;
+    width: 230px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     background-color: black;
 }
 
-.nav.dark .nav__title a, .nav.dark .nav__menus a {
+.nav.dark .nav__title a, .nav.dark .nav__menus a, .nav.dark .nav__footer {
     color: white;
 }
 

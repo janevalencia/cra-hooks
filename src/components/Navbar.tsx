@@ -82,8 +82,9 @@ function Navbar({
             </nav>
             <div className="nav__footer">
                 <p>
-                    Copyright &copy; {year} by {author},
+                    Copyright &copy; {year},
                 </p>
+                <p>{author}.</p>
                 <p>All rights reserved.</p>
                 <div className="nav_socials">
                     {githubURL && (
