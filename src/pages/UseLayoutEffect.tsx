@@ -36,11 +36,16 @@ const UseLayoutEffect = () => {
                             }}
                         >
                             <span>Shown on the right: </span>
-                            <Tooltip message="Hi, there!" direction="right">
-                                <span>
-                                    <AiFillQuestionCircle size={20} />
-                                </span>
-                            </Tooltip>
+                            <Tooltip
+                                message="Hi, there!"
+                                direction="right"
+                                tooltipId="tooltip-right"
+                                tooltipParent={
+                                    <span>
+                                        <AiFillQuestionCircle size={20} />
+                                    </span>
+                                }
+                            />
                         </div>
                         <div
                             style={{
@@ -50,18 +55,23 @@ const UseLayoutEffect = () => {
                             }}
                         >
                             <span>Shown at the top: </span>
-                            <Tooltip message="Hi, there!" direction="top">
-                                <span>
-                                    <AiFillQuestionCircle size={20} />
-                                </span>
-                            </Tooltip>
+                            <Tooltip
+                                message="Hi, there!"
+                                direction="top"
+                                tooltipId="tooltip-top"
+                                tooltipParent={
+                                    <span>
+                                        <AiFillQuestionCircle size={20} />
+                                    </span>
+                                }
+                            />
                         </div>
                     </div>
                 </div>
                 <br />
                 <div>
                     <h2>Code Snippet: </h2>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/janevalencia/cra-hooks/blob/staging/src/pages/UseLayoutEffect.tsx" target="_blank" rel="noopener noreferrer">
                         Check on github.
                     </a>
                 </div>

@@ -1,16 +1,24 @@
 import React, { ReactNode, useState } from "react";
 import "../styles/tooltip.css";
+import Portal from "./Portal";
 
 type TooltipProps = {
-    children: ReactNode,
-    timeoutDelay?: number,
-    direction: string,
-    message: string
+    tooltipId: string;
+    tooltipParent: ReactNode;
+    timeoutDelay?: number;
+    direction: string;
+    message: string;
 };
 
-const Tooltip = ({children, timeoutDelay, direction, message } : TooltipProps) => {
+const Tooltip = ({
+    tooltipId,
+    tooltipParent,
+    timeoutDelay,
+    direction,
+    message,
+}: TooltipProps) => {
     let timeout: ReturnType<typeof setTimeout>;
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState<boolean>(false);
 
     const showTip = () => {
         timeout = setTimeout(() => {
@@ -26,17 +34,19 @@ const Tooltip = ({children, timeoutDelay, direction, message } : TooltipProps) =
     return (
         <div
             className="Tooltip-Wrapper"
-            // When to show the tooltip
+            id={tooltipId}
             onMouseEnter={showTip}
             onMouseLeave={hideTip}
         >
             {/* Target icon */}
-            {children}
+            {tooltipParent}
             {active && (
-                <div className={`Tooltip-Tip ${direction || "top"}`}>
-                    {/* Tooltip content */}
-                    {message}
-                </div>
+                <Portal wrapperId={tooltipId}>
+                    <div className={`Tooltip-Tip ${direction || "top"}`}>
+                        {/* Tooltip content */}
+                        {message}
+                    </div>
+                </Portal>
             )}
         </div>
     );
