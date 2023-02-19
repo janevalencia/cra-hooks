@@ -20,12 +20,14 @@ const Tooltip = ({
     let timeout: ReturnType<typeof setTimeout>;
     const [active, setActive] = useState<boolean>(false);
 
+    // Display the tooltip message when mouse hover on.
     const showTip = () => {
         timeout = setTimeout(() => {
             setActive(true);
         }, timeoutDelay || 200);
     };
 
+    // Remove the tooltip message when mouse hover off.
     const hideTip = () => {
         clearInterval(timeout);
         setActive(false);
