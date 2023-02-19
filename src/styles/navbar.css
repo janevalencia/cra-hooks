@@ -7,10 +7,12 @@
     border-right: 1px grey solid;
 }
 
-.hamburger__mobile button {
-    background-color: white;
-    border: none;
-    cursor: pointer;
+.nav.dark {
+    background-color: black;
+}
+
+.nav.dark .nav__title a, .nav.dark .nav__menus a {
+    color: white;
 }
 
 .nav__title a {

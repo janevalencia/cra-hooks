@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/navbar.css";
 import {
     AiFillGithub,
@@ -7,6 +7,7 @@ import {
     AiFillMediumSquare,
     AiFillLinkedin,
 } from "react-icons/ai";
+import ThemeContext from "../context/ThemeContext";
 
 const defaultNavProps = {
     year: new Date().getFullYear(),
@@ -30,6 +31,8 @@ function Navbar({
     year,
     author,
 }: NavbarProps) {
+    const theme = useContext(ThemeContext);
+
     return (
         <header className="nav">
             {/* Title */}
@@ -72,7 +75,7 @@ function Navbar({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <AiFillGithub size={16} /> Github Repo
+                            <AiFillGithub size={16} fill="#833AB4" /> Github Repo
                         </a>
                     </li>
                 </ul>
@@ -95,7 +98,7 @@ function Navbar({
                     )}
                     {mediumUrl && (
                         <a href={mediumUrl}>
-                            <AiFillMediumSquare size={30} fill="black" />
+                            <AiFillMediumSquare size={30} fill={theme.isDarkMode ? "white" : "black"} />
                         </a>
                     )}
                     {instagramUrl && (

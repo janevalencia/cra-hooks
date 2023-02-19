@@ -14,6 +14,7 @@ import UseEffect from "./pages/UseEffect";
 import UseRef from "./pages/UseRef";
 import UseLayoutEffect from "./pages/UseLayoutEffect";
 import UseContext from "./pages/UseContext";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 const router = createBrowserRouter([
     {
@@ -23,47 +24,49 @@ const router = createBrowserRouter([
     },
     {
         path: "/use-state",
-        element: <UseState />
+        element: <UseState />,
     },
     {
         path: "/use-reducer",
-        element: <UseReducer />
+        element: <UseReducer />,
     },
     {
         path: "/use-ref",
-        element: <UseRef />
+        element: <UseRef />,
     },
     {
         path: "/use-effect",
-        element: <UseEffect />
+        element: <UseEffect />,
     },
     {
         path: "/use-layoutEffect",
-        element: <UseLayoutEffect />
+        element: <UseLayoutEffect />,
     },
     {
         path: "/use-memo",
-        element: <UseMemo />
+        element: <UseMemo />,
     },
     {
         path: "/use-callback",
-        element: <UseCallback />
+        element: <UseCallback />,
     },
     {
         path: "/use-imperativeHandle",
-        element: <UseImperativeHandle />
+        element: <UseImperativeHandle />,
     },
     {
         path: "/use-context",
-        element: <UseContext />
-    }
+        element: <UseContext />,
+    },
 ]);
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
 );
 root.render(
-    <Layout>
-        <RouterProvider router={router} />
-    </Layout>
+    <ThemeContextProvider>
+        <Layout>
+            <RouterProvider router={router} />
+        </Layout>
+    </ThemeContextProvider>
 );
